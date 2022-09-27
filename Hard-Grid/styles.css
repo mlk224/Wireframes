@@ -14,7 +14,7 @@ body{
     /*padding: 10px;*/
 }
 
-
+/* colors: https://www.pinterest.com/pin/510103095296824903/ */
 .item1 {
     grid-column: span 4;
     grid-row: 1;
