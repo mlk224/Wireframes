@@ -1,0 +1,110 @@
+body{ 
+    color:white;
+    text-align:center;
+    font-family:courier;
+    vertical-align: middle;
+} 
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    grid-auto-flow:row;
+    grid-template-areas:
+    "Small1 Small1 Small1 Small1 Med1 Med1 Med1 Med1 Small2 Small2 Small2 Small2"
+    "Small1 Small1 Small1 Small1 Med1 Med1 Med1 Med1 Small2 Small2 Small2 Small2"
+    "Small1 Small1 Small1 Small1 Med1 Med1 Med1 Med1 Small2 Small2 Small2 Small2"
+    "Header Header Header Header Header Header Header Header Header Header Img Img"
+    "Header Header Header Header Header Header Header Header Header Header Img Img"
+    "Header Header Header Header Header Header Header Header Header Header Img Img"
+    "Main Main Main Main Main Main Main Main Sidebar Sidebar Sidebar Sidebar"
+    "Main Main Main Main Main Main Main Main Sidebar Sidebar Sidebar Sidebar"
+    "Main Main Main Main Main Main Main Main Sidebar Sidebar Sidebar Sidebar"
+    "Quote Quote Quote Quote Quote Quote Quote Quote Sidebar Sidebar Sidebar Sidebar"
+    "Quote Quote Quote Quote Quote Quote Quote Quote Sidebar Sidebar Sidebar Sidebar"
+    "Quote Quote Quote Quote Quote Quote Quote Quote Sidebar Sidebar Sidebar Sidebar"
+    "Small3 Small3 Small3 Med2 Med2 Med2 Small4 Small4 Small4 Lg Lg Lg"
+    "Small3 Small3 Small3 Med2 Med2 Med2 Small4 Small4 Small4 Lg Lg Lg"
+    "Small3 Small3 Small3 Med2 Med2 Med2 Small4 Small4 Small4 Lg Lg Lg"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+    height:100vh;
+    overflow:hidden;
+    grid-gap: 10px;
+    background-color: #00121995;
+    padding: 10px;
+}
+
+/* colors: https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226 */
+
+.Small1 {
+    grid-area: Small1;
+    background-color:#94D2Bd;
+}
+.Small2 {
+    grid-area: Small2;
+    background-color:#94D2Bd;
+}.Small3 {
+    grid-area: Small3;
+    background-color:#94D2Bd;
+}
+.Small4 {
+    grid-area: Small4;
+    background-color:#94D2Bd;
+}
+.Med1 {
+    grid-area: Med1;
+    background-color:#0A9396;
+}
+.Med2 {
+    grid-area: Med2;
+    background-color:#0A9396;
+}
+.Lg {
+    grid-area: Lg;
+    background-color:#005F73;
+}
+
+.Main{
+    grid-area: Main;
+    background-color:#CA6702;
+}
+.Sidebar{
+    grid-area: Sidebar;
+    background-color:#E9D8A6;
+}
+.Quote{
+    grid-area: Quote;
+    background-color:#EE9B00;
+}
+.Footer{
+    grid-area: Footer;
+    background-color:#9B2226;
+    padding:20px;
+}
+.Header{
+    grid-area: Header;
+    background-color:#AE2012;
+}
+.Img{
+    grid-area: Img;
+    background-color:#ae511f;
+}
+/*
+@media (max-width:600px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 3fr) 1fr;
+        grid-template-areas:
+        "Small Small Small Small Med Med Med Med Small Small Small Small"
+        "Header Header Header Header Header Header Header Header Header Header Img Img"
+        "Main Main Main Main Main Main Main Main Sidebar Sidebar Sidebar Sidebar"
+        "Quote Quote Quote Quote Quote Quote Quote Quote Sidebar Sidebar Sidebar Sidebar"
+        "Small Small Small Med Med Med Small Small Small Lg Lg Lg"
+        "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+        ;
+        height:100vh;
+        /*gap: 10px;*/
+        /*background-color: grey;
+        /*padding: 10px;*/
+    /*}
+} */

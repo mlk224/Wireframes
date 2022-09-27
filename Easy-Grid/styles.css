@@ -1,95 +1,117 @@
+*{
+    margin: 0;
+}
 body{ 
     color:white;
     text-align:center;
     font-family:courier;
     vertical-align: middle;
 }
-header{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 81.4%; 
-    background-color:rgb(235, 46, 46);
+.grid-container {
+    display: grid;
+    /*grid-template-columns: 1/3vw 1/3vw 1/2vw 1/3vw 1/4vw;*/
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr 4fr 1fr;
+    /*gap: 10px;*/
+    background-color: grey;
+    /*padding: 10px;*/
 }
-#one {
-    position: absolute;
-    left: 0%;
-    right: 50%;
-    top: 18.6%;
-    bottom: 62.81%;
-    background: #e16e2c;
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    vertical-align: middle;
+} 
+.item1 {
+    grid-column: span 12;
+    grid-row: 1;
+    background-color: red;
 }
-#two {
-    position: absolute;
-    left: 50%;
-    right: 0%;
-    top: 18.6%;
-    bottom: 62.81%;
-    background: #e17e2c;
+
+.item2 {
+    grid-column: span 6;
+    grid-row: 2;
+    background-color: orangered;
 }
-#main1{
-    position: absolute;
-    left: 0%;
-    right: 25%;
-    top: 37.19%;
-    bottom: 44.21%;
-    background: rgb(238, 202, 24);
+.item3 {
+    grid-column: span 6;
+    grid-row: 2;
+    background-color: orange;
 }
-aside{
-    position: absolute;
-    left: 75%;
-    right: 0%;
-    top: 37.19%;
-    bottom: 44.21%;
-    background: rgb(237, 212, 84)
+
+.item4 {
+    grid-column: span 9;
+    grid-row: 3;
+    background-color: yellow;
 }
-#three {
-    position: absolute;
-    left: 0%;
-    right: 66.51%;
-    top: 55.79%;
-    bottom: 23.58%;
-    background: rgb(62, 183, 62);
+.item5 {
+    grid-column: span 3;
+    grid-row: 3;
+    background-color: rgb(216, 216, 39);
 }
-#four {
-    position: absolute;
-    left: 33.49%;
-    right: 33.07%;
-    top: 55.79%;
-    bottom: 23.58%;
-    background: rgb(83, 214, 83);
+
+.item6 {
+    grid-column: span 4;
+    grid-row: 4;
+    background-color: yellowgreen
 }
-#five {
-    position: absolute;
-    left: 66.51%;
-    right: 0%;
-    top: 55.79%;
-    bottom: 23.58%;
-    background: rgb(117, 245, 117);
+.item7 {
+    grid-column: span 4;
+    grid-row: 4;
+    background-color: green;
 }
-#main2{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 76.42%;
-    bottom: 4.99%;
-    background: rgb(61, 61, 222);
+.item8 {
+    grid-column: span 4;
+    grid-row: 4;
+    background-color: rgb(10, 90, 10);
 }
-footer{
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 95.01%;
-    bottom: -0.06%;
-    background: rgb(173, 30, 173);
+
+.item9 {
+    grid-column: span 12;
+    grid-row: 5;
+    background-color: blue;
 }
-#footer{
-    line-height: 0px !important;
+
+.item10 {
+    grid-column: span 12;
+    grid-row: 6;
+    background-color: purple;
 }
-p{
-    text-align:center;
-    vertical-align:middle;
-    font-weight: 400;
-    line-height: 109px;
+
+/*
+.item1 {
+    grid-column: 1 / 5;
+    grid-column: span 2;
+    grid-row:3;
 }
+
+.item2 {
+    grid-column: 1 / 3;
+}
+.item3 {
+    grid-column: 3 / 5;
+}
+
+.item4 {
+    grid-column: 1 / 4;
+}
+.item5 {
+    grid-column: 4 / 5;
+}
+
+.item6 {
+    grid-column: 1 / 2;
+}
+.item7 {
+    grid-column: 2 / 3;
+}
+.item8 {
+    grid-column: 4 / 5;
+}
+
+.item9 {
+    grid-column: 1 / 5;
+}
+.item10 {
+    grid-column: 1 / 5;
+}*/
